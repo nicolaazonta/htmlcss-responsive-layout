@@ -49,7 +49,7 @@
 }
 .card{
     width: 100%;
-    border: 2px dashed white;
+    border: 2px dashed black;
     border-radius: 2rem;
     margin: 1rem 0;
 }
@@ -86,10 +86,51 @@ section{
 #testimonials{
     background-color: var(--bg_light);
 }
+#testimonials .titles>h4,h2,p{
+    text-align: center;
+}
+#testimonials .card{
+    background-color: var(--secondary);
+    display: flex;
+}
+
+
+#benefits{
+    background-color: var(--secondary);
+}
+#benefits .titles>h3{
+    text-align: center;
+}
+#benefits .card{
+    background-color: var(--bg_light);
+}
+
+#about{
+    background-color: var(--bg_light);
+}
+#about .card {
+    background-color: var(--secondary);
+}
+
+
+#simple{
+    background-color: var(--secondary);
+}
+#simple .row{
+    justify-content: center;
+}
+
+
 /* #endregion-----------main---*/
 
 
 /* #region-----------footer---*/
+#site_footer{
+    background-color: var(--bg_footer);
+}
+#site_footer .row{
+    justify-content: center;
+}
 /* #endregion-----------footer---*/
 
 
@@ -114,7 +155,7 @@ section{
 /* #endregion-----------MEDIA QUERY tablet---*/
 
 
-/* #region-----------MEDIA QUERY mobile---*/
+/* #region-----------MEDIA QUERY desktop---*/
 @media screen and (min-width:768px) {
     html{
         background-color: #FDC15F;
@@ -132,6 +173,6 @@ section{
         width: calc(100% / 12 * 4);
     }
 }
-/* #endregion-----------MEDIA QUERY mobile---*/
+/* #endregion-----------MEDIA QUERY desktop---*/
 
 
