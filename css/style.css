@@ -63,7 +63,8 @@ img{
 }
 .button{
     padding: .4rem .8rem;
-    border-radius: .8rem;
+    border-radius: 1rem;
+    display: inline-block ;
 }
 .blue_btn{
     background-color: var(--primary);
@@ -250,11 +251,31 @@ img{
 #benefits{
     background-color: var(--secondary);
 }
-#benefits .titles>h3{
+#benefits .titles{
     text-align: center;
+    padding: 2rem 0;
+    color: var(--bg_light);
 }
 #benefits .card{
     background-color: var(--bg_light);
+    padding: 1rem;
+}
+#benefits .card h2{
+    font-size: 4rem;
+}
+#benefits .card h2,
+#benefits .card h3{ 
+    color: var(--secondary);
+}
+#benefits .card h2,
+#benefits .card h3,
+#benefits .card p{ 
+    padding: 1rem;
+}
+#benefits .button{
+    padding: .5rem 3rem;
+    margin-left: .75rem;
+    margin-bottom: .5rem;
 }
 /* #endregion-----------benefits---*/
 
