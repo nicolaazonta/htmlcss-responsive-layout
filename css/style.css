@@ -4,11 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;;
+    font-family: 'PT Sans', sans-serif;
 }
 [class^="col"]
 {
     padding: 0 1rem;
+}
+a{
+    text-decoration: none;
 }
 
 /* #endregion-----------commons---*/
@@ -39,22 +42,33 @@
     display: flex;
     margin: 0 -1rem;
 }
-.card{
-    height: 200px;
-}
 .container{
-    width: 95%;
+    width: 90%;
     max-width: 1152px;
     margin: auto;
 }
 .card{
     width: 100%;
     border: 2px dashed black;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     margin: 1rem 0;
 }
 section{
     padding: 2rem 0;
+}
+img{
+    width: 100%;
+}
+.button{
+    padding: .4rem .8rem;
+    border-radius: .8rem;
+}
+.blue_btn{
+    background-color: var(--primary);
+    color: var(--bg_light);
+}
+.button span,i{
+    padding: 0 .25rem;
 }
 /* #endregion-----------utilities---*/
 
@@ -72,7 +86,26 @@ section{
 }
 #demo .card{
     background-color: var(--bg_jumbo);
+    padding: 1rem;
+    padding-bottom: 0;
 }
+#demo h4,p,a,img{
+    padding: 1rem 0;
+}
+#demo p{
+    padding-bottom: 2rem;
+}
+/* #demo img{
+    padding-top: 1rem;
+} */
+
+#demo .image_container{
+    margin-bottom: -1.25rem;
+}
+
+
+
+
 
 
 #strategic{
@@ -86,9 +119,9 @@ section{
 #testimonials{
     background-color: var(--bg_light);
 }
-#testimonials .titles>h4,h2,p{
+/* #testimonials .titles>h4,h2,p{
     text-align: center;
-}
+} */
 #testimonials .card{
     background-color: var(--secondary);
     display: flex;
@@ -135,7 +168,7 @@ section{
 
 
 /* #region-----------MEDIA QUERY tablet---*/
-@media screen and (min-width:480px) {
+@media screen and (min-width:768px) {
     html{
         background-color: aquamarine;
     }
@@ -156,7 +189,7 @@ section{
 
 
 /* #region-----------MEDIA QUERY desktop---*/
-@media screen and (min-width:768px) {
+@media screen and (min-width:991px) {
     html{
         background-color: #FDC15F;
     }
