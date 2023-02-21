@@ -70,6 +70,9 @@ img{
 .button span,i{
     padding: 0 .25rem;
 }
+.text_center{
+    text-align: center;
+}
 /* #endregion-----------utilities---*/
 
 
@@ -103,6 +106,10 @@ img{
     background-color: var(--bg_jumbo);
     padding: 1rem;
     padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 100%; */
 }
 #demo h4,p,a,.image_container{
     padding: 1rem 0;
@@ -125,6 +132,11 @@ img{
     color: var(--bg_footer);
     line-height: 1.5rem;
 }
+#demo .icon{
+    color: var(--primary);
+    padding: 1.5rem 0;
+}
+
 
 
 
@@ -137,6 +149,7 @@ img{
 #strategic .secondary_card{
     background-color: var(--bg_light);
 }
+#strategic
 
 
 #testimonials{
