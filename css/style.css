@@ -52,7 +52,6 @@ p{
 }
 .card{
     width: 100%;
-    /* border: 2px dashed black; */
     border-radius: 1.5rem;
     margin: 1rem 0;
 }
@@ -128,9 +127,10 @@ img{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* height: 100%; */
 }
-#demo h4,p,a,.image_container{
+#demo h4,
+#demo p
+{
     padding: 1rem 0;
 }
 #demo img{
@@ -143,6 +143,7 @@ img{
     margin-bottom: -1rem;
     display: flex;
     justify-content: center;
+    padding: 1rem 0;
 }
 #demo h3{
     color: var(--primary);
@@ -164,7 +165,12 @@ img{
 #strategic{
     background-color: var(--secondary);
 }
-#strategic .main_card img,h2,p,i{
+
+#strategic .main_card img,
+#strategic .main_card h2,
+#strategic .main_card p,
+#strategic .main_card i
+{
     color: var(--bg_light);
     padding: 2rem;
 }
@@ -174,11 +180,10 @@ img{
     align-self: flex-end;
 }
 
-#strategic
-.secondary_card img,
-.secondary_card h3,
-.secondary_card p,
-.secondary_card i
+#strategic .secondary_card img,
+#strategic .secondary_card h3,
+#strategic .secondary_card p,
+#strategic .secondary_card i
 {
     color: var(--bg_dark);
     padding: 1rem;
@@ -190,12 +195,6 @@ img{
     padding: .8rem .9rem;
     border-radius: 50%;
 }
-
-{
-    color: var(--bg_dark);
-    padding: 1rem;
-}
-
 #strategic .secondary_card{
     border-radius: 3rem;
 }
@@ -204,12 +203,30 @@ img{
 #testimonials{
     background-color: var(--bg_light);
 }
-/* #testimonials .titles>h4,h2,p{
+#testimonials .titles h4,
+#testimonials .titles h2,
+#testimonials .titles p{
     text-align: center;
-} */
+    padding: 1rem 0;
+} 
+#testimonials .titles h2{
+    color: var(--secondary);
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
 #testimonials .card{
     background-color: var(--secondary);
     display: flex;
+}
+#testimonials .card{
+    background-color: var(--secondary);
+    display: flex;
+}
+
+#testimonials img{
+    width: 60%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
 }
 
 
@@ -263,6 +280,9 @@ img{
     .col_md_12{
         width: calc(100% / 12);
     }
+    .col_md_9{
+        width: calc(100% / 12 * 9);
+    }
     .col_md_8{
         width: calc(100% / 12 * 8);
     }
@@ -271,6 +291,9 @@ img{
     }
     .col_md_4{
         width: calc(100% / 12 * 4);
+    }
+    .col_md_3{
+        width: calc(100% / 12 * 3);
     }
     #site_nav{
         height: 50px;
