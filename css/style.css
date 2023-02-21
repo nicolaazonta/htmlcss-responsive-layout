@@ -13,6 +13,9 @@
 a{
     text-decoration: none;
 }
+p{
+    line-height: 1.5rem;
+}
 
 /* #endregion-----------commons---*/
 /* #region-----------utilities---*/
@@ -67,11 +70,27 @@ img{
     background-color: var(--primary);
     color: var(--bg_light);
 }
+.violet_btn{
+    background-color: var(--secondary);
+    color: var(--bg_light);
+}
 .button span,i{
     padding: 0 .25rem;
 }
 .text_center{
     text-align: center;
+}
+.display_flex{
+    display: flex;
+}
+.align_end{
+    align-content: flex-end;
+}
+.position_relative{
+    position: relative;
+}
+.dashed{
+    border: 2px dashed red;
 }
 /* #endregion-----------utilities---*/
 
@@ -130,7 +149,6 @@ img{
 }
 #demo p{
     color: var(--bg_footer);
-    line-height: 1.5rem;
 }
 #demo .icon{
     color: var(--primary);
@@ -146,10 +164,41 @@ img{
 #strategic{
     background-color: var(--secondary);
 }
+#strategic .main_card img,h2,p,i{
+    color: var(--bg_light);
+    padding: 2rem;
+}
 #strategic .secondary_card{
     background-color: var(--bg_light);
+    padding: 1rem;
+    align-self: flex-end;
 }
+
 #strategic
+.secondary_card img,
+.secondary_card h3,
+.secondary_card p,
+.secondary_card i
+{
+    color: var(--bg_dark);
+    padding: 1rem;
+}
+#strategic .secondary_card img{
+    width: 80%;
+}
+#strategic .secondary_card .button{
+    padding: .8rem .9rem;
+    border-radius: 50%;
+}
+
+{
+    color: var(--bg_dark);
+    padding: 1rem;
+}
+
+#strategic .secondary_card{
+    border-radius: 3rem;
+}
 
 
 #testimonials{
@@ -173,6 +222,9 @@ img{
 #benefits .card{
     background-color: var(--bg_light);
 }
+
+
+
 
 #about{
     background-color: var(--bg_light);
