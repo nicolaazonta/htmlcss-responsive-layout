@@ -54,6 +54,7 @@ p{
     width: 100%;
     border-radius: 1.5rem;
     margin: 1rem 0;
+    padding: 1rem;
 }
 section{
     padding: 1rem 0;
@@ -92,6 +93,12 @@ img{
 .dashed{
     border: 2px dashed red;
 }
+.persona_img{
+    width: 70%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: 0 .5rem;
+}
 /* #endregion-----------utilities---*/
 
 
@@ -101,6 +108,7 @@ img{
     height: 40px;
     position: sticky;
     top: 0;
+    z-index: 10000;
 }
 #site_nav .container{
     max-height: 100%;
@@ -125,7 +133,6 @@ img{
 }
 #demo .card{
     background-color: var(--bg_jumbo);
-    padding: 1rem;
     padding-bottom: 0;
     display: flex;
     justify-content: center;
@@ -218,14 +225,8 @@ img{
 }
 #testimonials .card{
     background-color: var(--secondary);
-    padding: 1rem 0;
 }
-#testimonials img{
-    width: 70%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    margin: 0 .5rem;
-}
+
 
 #testimonials .image_container{
     display: flex;
@@ -258,7 +259,6 @@ img{
 }
 #benefits .card{
     background-color: var(--bg_light);
-    padding: 1rem;
 }
 #benefits .card h2{
     font-size: 4rem;
@@ -284,8 +284,27 @@ img{
 #about{
     background-color: var(--bg_light);
 }
-#about .card {
-    background-color: var(--secondary);
+#about h2,p,a,h3 {
+    padding: 1rem 0;
+}
+#about h2{
+    color: var(--secondary);
+    font-size: 3rem;
+}
+#about h3{
+    color: var(--secondary);
+}
+#about .image_container{
+    padding: 1rem 0;
+}
+#about .persona_img{
+    width: 70%;
+}
+#about .image_container .mark{
+    position: absolute;
+    right: 7rem;
+    top: 2rem;
+    color: var(--secondary);    
 }
 /* #endregion-----------about---*/
 
@@ -346,6 +365,13 @@ img{
     #testimonials .text_container{
         text-align: left;
     }
+    #about .card {
+        padding: 0 1rem;
+    }
+    #about .image_container .mark{
+        right: 4rem;
+        top: .5rem;    
+    }
 
 }
 /* #endregion-----------MEDIA QUERY tablet---*/
@@ -374,6 +400,10 @@ img{
     #demo .image_container{
         display: flex;
         margin-bottom: -1rem;
+    }
+    #about .image_container .mark{
+        right: 6rem;
+        top: .5rem;    
     }
 }
 /* #endregion-----------MEDIA QUERY desktop---*/
