@@ -118,9 +118,35 @@ img{
     color: var(--bg_light);
     padding: 1rem 0;
 }
+#site_nav .navbar_left{
+    width: 20%;
+}
+#site_nav .navbar_right{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
 #site_nav a{
     width: 10%;
     margin-bottom: -.4rem;
+}
+#site_nav .navbar_right .complete_menu{
+    display: none;
+    color: var(--bg_light);
+}
+#site_nav .complete_menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+#site_nav ul li{
+    padding: 0 .6rem;
+    font-size: .8rem;
+}
+#site_nav .complete_menu .button{
+    padding: .6rem 1rem;
+    background-color: var(--bg_light);
+    color: var(--bg_dark);
 }
 /* #endregion-----------navbar---*/
 
@@ -434,6 +460,14 @@ img{
         right: 6rem;
         top: .5rem;    
     }
+    #site_nav .navbar_right .bars_menu{
+        display: none;
+    }
+    #site_nav .navbar_right .complete_menu{
+        display: flex;
+        
+    }
+    
 }
 /* #endregion-----------MEDIA QUERY desktop---*/
 
